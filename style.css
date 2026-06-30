@@ -1,0 +1,127 @@
+:root {
+    --corPrincipal: #7E459B;
+    --corSecundaria: #B382BA;
+    --corTerciaria: #faf9f9;
+    --corBotao: #050505;
+    --globalTipografia: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--globalTipografia);
+}
+
+.main-menu {
+    background-color: var(--corPrincipal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    color: var(--corTerciaria);
+}
+
+.logo-menu {
+    font-family: "DynaPuff", system-ui;
+    font-size: 24px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: var(--corTerciaria);
+    transition: 0.3s ease-in-out;
+    font-weight: 200;
+}
+
+.menu-list a:hover {
+    color: blueviolet;
+}
+
+.container-banner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.why-learn {
+    display: flex;
+    flex-direction: column;
+}
+
+.why-learn-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
+    padding: 48px;
+}
+
+.why-learn-text h2 {
+    width: min(90%, 700px);
+    font-size: 36px;
+    font-family: "DynaPuff", system-ui;
+    color: var(--corPrincipal);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.12), 4px 4px 10px rgba(126, 69, 155, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.why-learn-text p {
+    width: min(80%, 800px);
+    line-height: 1.7;
+    color: #4a4a4a;
+}
+
+.why-learn-cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 0 24px 64px;
+}
+
+.cards-item {
+    padding: 24px;
+    width: 260px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    background: linear-gradient(135deg, var(--corPrincipal) 0%, #8a57ad 100%);
+    color: var(--corTerciaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(126, 69, 155, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 36px rgba(126, 69, 155, 0.28);
+}
+
+.cards-item img {
+    width: 54px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.cards-item h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.cards-item p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
